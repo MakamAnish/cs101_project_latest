@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1612008446 source:c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\coin.cpp
+	"coin.h"
+	"lasso.h"
+
+1610860955 c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\coin.h
+	"MovingObject.h"
+
+1610860955 c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\movingobject.h
+	<simplecpp>
+	<vector>
+	<composite.h>
+	<sprite.h>
+
+1612010781 c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\lasso.h
+	"MovingObject.h"
+	"coin.h"
+
+1612008446 source:c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\lasso.cpp
+	<simplecpp>
+	<string>
+	"MovingObject.h"
+	"lasso.h"
+	"coin.h"
+
+1612008096 source:c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\main.cpp
+	<cstdio>
+	<cstdlib>
+	<simplecpp>
+	<string>
+	"MovingObject.h"
+	"lasso.h"
+	"coin.h"
+
+1610860955 source:c:\users\makam\onedrive\documents\iitb\cs 101\lasso game\lasso\movingobject.cpp
+	<simplecpp>
+	"MovingObject.h"
+
+1613210278 source:d:\iitb\cs 101\lasso game\lasso\coin.cpp
+	"coin.h"
+	"lasso.h"
+	"time.h"
+	<cstdlib>
+	<iostream>
+	<ctime>
+	<random>
+
+1612704567 d:\iitb\cs 101\lasso game\lasso\coin.h
+	"MovingObject.h"
+
+1610860955 d:\iitb\cs 101\lasso game\lasso\movingobject.h
+	<simplecpp>
+	<vector>
+	<composite.h>
+	<sprite.h>
+
+1613206734 d:\iitb\cs 101\lasso game\lasso\lasso.h
+	"MovingObject.h"
+	"coin.h"
+
+1613206734 source:d:\iitb\cs 101\lasso game\lasso\lasso.cpp
+	<simplecpp>
+	<string>
+	"MovingObject.h"
+	"lasso.h"
+	"coin.h"
+
+1613213319 source:d:\iitb\cs 101\lasso game\lasso\main.cpp
+	<cstdio>
+	<cstdlib>
+	<simplecpp>
+	<string>
+	"MovingObject.h"
+	"lasso.h"
+	"coin.h"
+	"time.h"
+	<ctime>
+	<fstream>
+
+1610860955 source:d:\iitb\cs 101\lasso game\lasso\movingobject.cpp
+	<simplecpp>
+	"MovingObject.h"
+

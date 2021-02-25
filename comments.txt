@@ -1,0 +1,12 @@
+its working pretty well, but there are a few bugs.
+before talking about the bugs, general issues:
+	i changed lines 59-61 of main.cpp so it works now
+	the formatting of your code isnt the best
+	use tabs appropriately where needed, or right click in code blocks and use the a style formatter
+	from now onwards, format the code in thiss folder, not some other files(ive changed the cbp file accordingly)
+
+bugs:
+	everytime i catch a coin, it counts it as two coins
+	there seem to be redundant dead coins that dont move, and dont need to be shown(only show the coins that i can catch)
+	sometimes, even after catching a coin... the coin keeps moving(so there are two coins now, one attached to the lasso, and one that contnues moving)
+	the lasso fails to catch coins even if they are inside the loop at times
