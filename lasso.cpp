@@ -89,13 +89,13 @@ void Lasso::check_for_coin(Coin *coinPtr) {
     for(int i=0;i<2;i++){
   double lasso_x = getXPos();
   double lasso_y = getYPos();
-  double coin_x = coinPtr->getXPos();
-  double coin_y = coinPtr->getYPos();
+  double coin_x = coinPtr[i].getXPos();
+  double coin_y = coinPtr[i].getYPos();
   double xdiff = (lasso_x - coin_x);
   double ydiff = (lasso_y - coin_y);
   double distance = sqrt((xdiff*xdiff)+(ydiff*ydiff));
   if(distance <= LASSO_RADIUS) {
-    the_coin[i] = coinPtr;
+    the_coin[i] = &coinPtr[i];
     the_coin[i]->getAttachedTo(this);
     caught[i] = true;
   }
