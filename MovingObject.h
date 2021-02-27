@@ -13,10 +13,12 @@ class MovingObject : public Sprite {
   double vx, vy;
   double ax, ay;
   bool paused;
+  public:
   void initMO(double argvx, double argvy, double argax, double argay, bool argpaused=true) {
     vx=argvx; vy=argvy; ax=argax; ay=argay; paused=argpaused;
   }
- public:
+
+ MovingObject(){}
  MovingObject(double argvx, double argvy, double argax, double argay, bool argpaused=true)
     : Sprite() {
     initMO(argvx, argvy, argax, argay, argpaused);

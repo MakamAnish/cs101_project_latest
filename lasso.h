@@ -60,33 +60,49 @@ class Lasso : public MovingObject {
   Line lasso_band;
 
   // State info
-  bool lasso_looped,caught[2];//"caught" tells whether the coin is attached to lasso
+  bool lasso_looped,caught[10],caught2,caughtmag,caughtinc;//"caught" tells whether the coin is attached to lasso
 
-  Coin *the_coin[2];
+  Coin *the_coin[10];
+  Coin2 *the_coin2;
+  Magnet *the_coinmag;
+  Increase *the_coininc;
 
 
   void initLasso();
  public:
+
+  double lasso_radius;
   int score=0;
+  int Nlasso;
+  int SI1;
  Lasso(double speed, double angle_deg, double argax, double argay, bool argpaused, bool rtheta) : MovingObject(speed, angle_deg, argax, argay, argpaused, rtheta) {
     release_speed = speed;
     release_angle_deg = angle_deg;
     lasso_ax = argax;
     lasso_ay = argay;
+    lasso_radius=LASSO_RADIUS;
+
     initLasso();
-     for(size_t i=0;i<2;i++){caught[i]=false;}
+    for(size_t i=0;i<10;i++){caught[i]=false;}
   }
 
   void draw_lasso_band();
   void yank();
+  void yank2();
+  void yankmag();
+  void yankinc();
   void loopit();
   void addAngle(double angle_deg);
   void addSpeed(double speed);
 
   void nextStep(double t);
   void check_for_coin(Coin *coin);
+  void check_for_coin2(Coin2 *coin);
+  void check_for_coinmag(Magnet *coin);
+  void check_for_coininc(Increase *coin);
   int num_coins;
   int getNumCoins() { return num_coins; }
+  void stickmag(Magnet *coin);
 
 }; // End class Lasso
 
